@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+
+/* Header */
+.header {
+    width: 100%;
+    height: 75px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+
+    /* fixed position */
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+    z-index: 1000;
+}
+
+
+/* Logo */
+.logo img {
+    width: 180px;
+}
+
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    /* relative position */
+    position: relative;
+}
+
+
+.navbar > a,
+.courses > a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.navbar a:hover {
+    color: #0b8f3c;
+}
+
+
+/* Courses */
+.courses {
+    position: relative;
+}
+
+
+/* Dropdown */
+.dropdown {
+    width: 250px;
+    background-color: white;
+
+    /* absolute position */
+    position: absolute;
+
+    top: 35px;
+    left: -20px;
+
+    display: none;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+
+    border-radius: 5px;
+
+    overflow: hidden;
+}
+
+
+/* Show dropdown when mouse comes on Courses */
+.courses:hover .dropdown {
+    display: block;
+}
+
+
+/* Dropdown Links */
+.dropdown a {
+    display: block;
+
+    padding: 13px 18px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    font-size: 14px;
+}
+
+
+/* Dropdown hover */
+.dropdown a:hover {
+    background-color: #0b8f3c;
+    color: white;
+}
+
+
+/* Apply Button */
+.apply-btn {
+    background-color: #1137a0;
+    color: white;
+
+    border: none;
+
+    padding: 12px 22px;
+
+    border-radius: 5px;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.apply-btn:hover {
+    background-color: #1137b3;
+}
+
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+
+    padding-top: 180px;
+
+    text-align: center;
+
+    background-color: #eaf7ef;
+}
+
+
+.hero h1 {
+    font-size: 45px;
+    color: #0b8f3c;
+
+    margin-bottom: 20px;
+}
+
+
+.hero p {
+    font-size: 20px;
+    color: #555;
+
+    margin-bottom: 30px;
+}
+
+
+.hero button {
+    background-color: blue;
+
+    color: white;
+
+    border: none;
+
+    padding: 14px 30px;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
